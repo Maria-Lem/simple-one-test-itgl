@@ -1,0 +1,29 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.input {
+  padding: 6px 8px;
+  @include border;
+
+  &::placeholder {
+    font-family: $font-family;
+    font-size: 14px;
+    color: $color-text-light;
+  }
+
+  &__icon {
+    position: absolute;
+    right: 8px + 16px;
+    top: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  // &_type {
+  //   &_search {
+  //     background: url("../images/icons/search-light.svg") no-repeat right;
+  //     padding-right: 25px;
+  //   }
+  // }
+}

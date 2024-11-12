@@ -1,0 +1,6 @@
+@use "../utils/variables" as *;
+
+.link {
+  text-decoration: none;
+  color: $color-text;
+}

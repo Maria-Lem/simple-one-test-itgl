@@ -1,0 +1,11 @@
+@use "../utils/mixins" as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  background: transparent;
+  @include border;
+  cursor: pointer;
+}
