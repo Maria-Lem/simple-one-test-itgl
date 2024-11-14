@@ -7,13 +7,13 @@
   <title>Simple One</title>
 </head>
 <body>
-  <heaher class="header">
-    <img src="images/icons/logo.svg" alt="App logo" class="header__logo">
+  <header class="header">
+    <img src="images/icons/logo.svg" alt="Логотип" class="header__logo">
     <div class="header__control-container">
       <div class="input-container input-container_with-icon">
         <input type="text" class="header__input input" placeholder="Поиск">
         <button class="input__icon">
-          <img src="images/icons/search-light.svg" alt="Search icon">
+          <img src="images/icons/search-light.svg" alt="Иконка поиска">
         </button>
       </div>
       <a href="#" class="header__profile profile link">
@@ -21,9 +21,86 @@
         <span class="profile__name">Максим Галактионов</span>
       </a>
       <button class="header__button button button_type_settings">
-        <img src="images/icons/settings.svg" alt="Settings icon" class="button__icon">
+        <img src="images/icons/settings.svg" alt="Иконка настроек" class="button__icon">
       </button>
     </form>
-  </heaher>
+  </header>
+
+  <main class="main">
+    <aside class="sidebar">
+      <div class="sidebar__controls controls">
+        <div class="controls__tab controls__tab_type_sidebar controls__tab_active"></div>
+        <div class="controls__tab controls__tab_type_star"></div>
+      </div>
+      <div class="sidebar__content menu">
+        <div class="menu__controls">
+          <div class="input-container input-container_with-icon">
+            <input type="text" class="sidebar__input input" placeholder="Поиск по меню">
+            <button class="input__icon">
+              <img src="images/icons/filter.svg" alt="Иконка фильтра">
+            </button>
+          </div>
+          <button class="sidebar__button button">
+            <img src="images/icons/no-pin.svg" alt="Иконка закрепов" class="button__icon">
+          </button>
+        </div>
+        <div class="menu__list list">
+          <details class="list__item">
+            <summary class="list__item-name">Моя работа</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Структура портала</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Личное расписание</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Отсутствие на рабочем месте</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Портфель услуг</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Дашборды</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Доски задач</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Обращения</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">События</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Инциденты</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Проблемы</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Настройка каталогов</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Запросы на обслуживание</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Запросы на изменение</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Управление конфигурациями</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Управление уровнем услуг</summary>
+          </details>
+          <details class="list__item">
+            <summary class="list__item-name">Настройка соответствий</summary>
+          </details>
+        </div>
+      </div>
+    </aside>
+    <div class="main__subtask"></div>
+  </main>
+
 </body>
 </html>

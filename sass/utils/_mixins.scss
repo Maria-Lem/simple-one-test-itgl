@@ -1,6 +1,15 @@
-@use "variables" as *;
+@use "variables"as *;
 
 @mixin border {
   border: 1px solid $color-border;
   border-radius: 4px;
+}
+
+@mixin sidebarTabs($icon) {
+  margin: 16px 0;
+  width: 24px;
+  height: 24px;
+  background-color: $color-text;
+  mask: url("../images/icons/#{$icon}.svg") no-repeat center;
+  cursor: pointer;
 }

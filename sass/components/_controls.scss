@@ -1,0 +1,24 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.controls {
+  &__tab {
+    &_type {
+      &_sidebar {
+        @include sidebarTabs(sidebar);
+      }
+
+      &_star {
+        @include sidebarTabs(star);
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &_active {
+      background-color: $color-blue;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@use "../components/controls";
+@use "../components/menu";
+@use "../components/list";
+
+@use "../utils/variables" as *;
+
+.sidebar {
+  display: flex;
+  height: calc(100vh - 48px);
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 16px;
+    border-right: $border-divider;
+  }
+
+  &__content {
+    border-right: $border-divider;
+  }
+
+  &__input {
+    width: 208px;
+  }
+}

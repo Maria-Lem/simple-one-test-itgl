@@ -1,0 +1,27 @@
+.list {
+
+  &__item {
+    display: flex;
+    padding: 10px 0;
+    cursor: pointer;
+    
+    &-name {
+      list-style: none;
+      display: flex;
+
+      &::before {
+        content: '';
+        display: block;
+        margin-right: 8px;
+        width: 16px;
+        height: 20px;
+        background: url("../images/icons/details-icon.svg");
+        transition: .2s;
+      }
+    }
+
+    &[open] > &-name::before {
+      transform: rotate(90deg);
+    }
+  }
+}

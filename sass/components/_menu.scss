@@ -1,0 +1,17 @@
+@use "../utils/variables" as *;
+
+.menu {
+  width: 280px;
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: $border-divider;
+  }
+
+  &__list {
+    padding-left: 16px;
+  }
+}
